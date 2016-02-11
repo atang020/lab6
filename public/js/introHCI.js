@@ -56,6 +56,7 @@ $(".project a").click(function(e){
 
 $("#colorBtn").click(function(e){
 	$.get("/palette", randomColors);
+	$('.container').css('transform', 'rotate(180deg)');
 })
 
 function randomColors(e){
